@@ -1,0 +1,336 @@
+   *{
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rosybrown; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear; 
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+body{
+    background:black;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+} 
+
+
+.header .logo img{
+    height: 7rem;
+} 
+
+.header{
+    background:black ;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+    padding:1.rem 7%;
+     border-bottom: white;
+     position: fixed;
+    top:0; left: 0; right: 0;
+     z-index: 1000; 
+}  
+
+/* .navbar{
+    height: 50px;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:brown;
+} */
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    
+  }
+  
+  
+  .navbar a {
+
+    float: left;
+    margin-left: 150px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color:palevioletred;
+  }
+  
+  Current/active navbar link
+  .navbar a:active {
+    background-color:white;
+  }
+
+  .home{
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1637382752225-d7f97e1ddd03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsayUyMHNwbGFzaHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+    /* background-image: url(https://img.freepik.com/photos-premium/vue-face-du-delicieux-milk-shake-au-chocolat_23-2148549982.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:black;
+    background-color:palevioletred;
+    cursor: pointer;
+}
+.about{
+    background-color:papayawhip;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:black;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    background-color: papayawhip;
+    color:black;
+    padding:1rem 0;
+    line-height: 1.8}
+
+    .menu .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap:1.5rem;
+    }
+    
+    .menu .box-container .box{
+        padding:5rem;
+        text-align: center;
+        border:1px double white;    
+    }
+    
+    .menu .box-container .box img{
+        height: 10rem;
+    }
+    
+    .menu .box-container .box h3{
+        color: #fff;
+        font-size: 2rem;
+        padding:1rem 0;
+    }
+    
+    .menu .box-container .box .price{
+        color: #fff;
+        font-size: 2.5rem;
+        padding:.5rem 0;
+    }
+    
+    .menu .box-container .box .price span{
+        font-size: 1.5rem;
+        text-decoration: line-through;
+        font-weight: lighter;
+    }
+    
+    .menu .box-container .box:hover{
+        background:#fff;
+    }
+    
+    .menu .box-container .box:hover >* {
+        color:var(--black);
+    }
+    .review{
+        background-color: antiquewhite;
+    }
+    .review .box-container{
+        display: grid;
+        background-color: azure;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap:1.5rem;
+    }
+    
+    .review .box-container .box{
+        border:3px solid black;
+        text-align: center;
+        padding:3rem 2rem;
+        width: 100%;
+    }
+    
+    .review .box-container .box p{
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color:black;
+        padding:2rem 0;
+    }
+    
+    .review .box-container .box .user{
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .review .box-container .box h3{
+        padding:1rem 0;
+        font-size: 2rem;
+        color:black;
+    }
+    
+    .review .box-container .box .stars i{
+        font-size: 1.5rem;
+        color:gold;
+    }
+    .contact{
+        background-color: black;
+    }
+    .contact .row{
+        display: flex;
+        background:black;
+        flex-wrap: wrap;
+        gap:1rem;
+    }
+    
+   
+    
+    .contact .row form{
+        flex:1 1 45rem;
+        padding:5rem 2rem;
+        text-align: center;
+    }
+    
+    .contact .row form h3{
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        color:#fff;
+    }
+    
+    .contact .row form .inputBox{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        width: 50%;
+        margin-left: 300px;
+        margin-bottom: 2rem;
+        background:white;
+        border:1px double whitesmoke;
+    }
+    
+    .contact .row form .inputBox span{
+        color:#fff;
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .contact .row form .inputBox input{
+        width: 100%;
+        padding:2rem;
+        font-size: 1.7rem;
+        color:#fff;
+        text-transform: none;
+        background:none;
+    }
+    .icon-container{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        background-color: #eee;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+         color: #eee;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+    
+    } 
+    .icon i{
+        font-size: 30px;
+        color: black;
+    }
+    .icon:hover{
+        background-image: linear-gradient(to bottom right,blue,red,rgb(251,255,251) );
+    }
+    .icon :hover i{
+        color: white;
+        animation: shake 0.75s;
+    } 
+    
+    
